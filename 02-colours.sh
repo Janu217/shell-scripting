@@ -16,7 +16,6 @@
 
 # Cyan              36                  46
 
-echo test
 
 echo -e "\e[32m I am printing Green color   \e[0m"
 
