@@ -54,7 +54,7 @@ If Command is usually available in 3 forms :
 
 COMMENT
 
-a=10
+a=101
 
 if [ "$a" == 10 ] ; then
     echo "This is valid condition"
