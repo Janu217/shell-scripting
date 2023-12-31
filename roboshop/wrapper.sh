@@ -1,5 +1,5 @@
 #!/bin/bash
 
-bash componetnts/$1.sh
+bash components/$1.sh
 
 
