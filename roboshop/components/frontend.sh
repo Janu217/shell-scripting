@@ -11,9 +11,9 @@ echo -n "Installing Nginx :"
 yum install nginx -y  &>> $LOGFILE
 stat $?
 
-# echo -n "Downloading the ${COMPONENT} component :"
-# curl -s -L -o /tmp/${COMPONENT}.zip "https://github.com/stans-robot-project/${COMPONENT}/archive/main.zip"
-# stat $?
+echo -n "Downloading the ${COMPONENT} component :"
+curl -s -L -o /tmp/${COMPONENT}.zip "https://github.com/stans-robot-project/${COMPONENT}/archive/main.zip"
+stat $?
 
 # echo -n "Performing Cleanup: "
 # cd /usr/share/nginx/html
