@@ -20,13 +20,13 @@ cd /usr/share/nginx/html
 rm -rf *    &>> $LOGFILE
 stat $?
 
-# echo -n "Extracting ${COMPOMENT} component :"
-# unzip /tmp/${COMPONENT}.zip   &>> $LOGFILE
-# mv $COMPONENT-main/*  .
-# mv static/* . 
-# rm -rf ${COMPONENT}-main README.md
-# mv localhost.conf /etc/nginx/default.d/roboshop.conf
-# stat $? 
+echo -n "Extracting ${COMPOMENT} component :"
+unzip /tmp/${COMPONENT}.zip   &>> $LOGFILE
+mv $COMPONENT-main/*  .
+mv static/* . 
+rm -rf ${COMPONENT}-main README.md
+mv localhost.conf /etc/nginx/default.d/roboshop.conf
+stat $? 
 
 # echo -n "Updating the Backend component reveseproxy details : "
 # for component in catalogue user cart shipping payment; do
