@@ -58,4 +58,6 @@ a=10
 
 if [ "$a" == 10 ] ; then
     echo "This is valid condition"
+else
+    echo "This is else condition"
 fi
