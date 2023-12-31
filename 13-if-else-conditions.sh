@@ -56,6 +56,6 @@ COMMENT
 
 a=10
 
-if [$a==10 ]; then
+if [ "$a" == 10 ] ; then
     echo "This is valid condition"
 fi
