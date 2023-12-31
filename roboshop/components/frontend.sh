@@ -35,9 +35,9 @@ done
 stat $? 
 
 echo -n "Starting $COMPONENT service: "
-systemctl daemon-reload &>> $LOGFILE
-systemctl enable nginx  &>> $LOGFILE
-systemctl restart nginx   &>> $LOGFILE
+systemctl daemon-reload #&>> $LOGFILE
+systemctl enable nginx  #&>> $LOGFILE
+systemctl restart nginx  # &>> $LOGFILE
 stat $?
 
 echo -e "*********** \e[35m $COMPONENT Installation has Completed \e[0m ***********"
