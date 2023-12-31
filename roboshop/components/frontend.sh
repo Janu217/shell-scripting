@@ -34,8 +34,8 @@ for component in catalogue user cart shipping payment; do
 done 
 stat $? 
 
-# echo -n "Starting $COMPONENT service: "
-# systemctl daemon-reload &>> $LOGFILE
+echo -n "Starting $COMPONENT service: "
+systemctl daemon-reload &>> $LOGFILE
 # systemctl enable nginx  &>> $LOGFILE
 # systemctl restart nginx   &>> $LOGFILE
 # stat $?
