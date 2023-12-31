@@ -58,6 +58,8 @@ a=101
 
 if [ "$a" == 10 ] ; then
     echo "This is valid condition"
+elif
+    echo "This is else if condition"
 else
     echo "This is else condition"
 fi
